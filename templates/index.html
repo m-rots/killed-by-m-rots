@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block description %}{{ section.description }}{% endblock description %}
+
+{% block content %}
+<main class="victims">
+    {{ section.content | safe }}
+
+    <!-- Projects killed by me -->
+    {% for page in section.pages %}
+    <section>
+        <div class="killed">{{ page.extra.killed }}</div>
+        <h2>{{ page.title }}</h2>
+        {{ page.summary | safe }}
+    </section>
+    {% endfor %}
+</main>
+{% endblock content %}

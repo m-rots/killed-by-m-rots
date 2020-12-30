@@ -1,0 +1,22 @@
+::selection {
+    color: var(--swapped-font-colour);
+    background: var(--accent-colour);
+}
+
+:root {
+    --font-colour: #1f2937;
+    --bg-colour: #fff;
+    --dimmed-colour: #6b7280; 
+    --accent-colour: #3D59E9;
+    --swapped-font-colour: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-colour: #f3f4f6;
+        --bg-colour: #1f2937;
+        --dimmed-colour: #9ca3af;
+        --accent-colour: #E4CFF7;
+        --swapped-font-colour: #1f2937;
+    }
+}

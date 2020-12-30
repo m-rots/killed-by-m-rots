@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{% block description %}{% endblock description %}" />
+    <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="killed-container">
+        <header>
+            <h1>Killed by m-rots</h1>
+        </header>
+        <main>
+            {% block content %} {% endblock content %}
+        </main>
+        <footer>
+            <a rel="noopener" target="_blank" href="https://github.com/m-rots">Made with ♥ by Thanos himself</a>
+        </footer>
+    </div>
+</body>
+
+</html>
